@@ -30,7 +30,7 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index, player = "X")
   else
-    false
+    puts "Please enter 1-9:"
 end
 display_board(board)
 end
