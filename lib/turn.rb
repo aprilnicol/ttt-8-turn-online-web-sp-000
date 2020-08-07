@@ -29,9 +29,8 @@ def turn(board)
   index = input_to_index(user_input)
   if valid_move?(board, index)
     move(board, index, player = "X")
-  elsif !valid_move?(board, index)
-    !move(board, index, player = "X")
+    turn(board)
     puts "Please enter 1-9:"
-end
+  end 
 display_board(board)
 end
