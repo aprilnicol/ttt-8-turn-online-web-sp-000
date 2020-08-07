@@ -35,4 +35,3 @@ else
  display_board(board)
 end
 end
-
