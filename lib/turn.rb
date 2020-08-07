@@ -11,9 +11,9 @@ def input_to_index(user_input)
   return index
 end
 def valid_move?(board, index)
-  if index.between?(0,8)
-    return true
-  elsif !index.between?(0,8) == false
+  if index.between?(0,8) == be_truthy
+    return true 
+  elsif !index.between?(0,8) == be_falsey
     return false
   end
 end
